@@ -5,18 +5,20 @@ Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak statu
 ---
 
 ## Log Aktivitas Terakhir
-- **Waktu Pembaruan:** 2026-11-10 23:19:39
+- **Waktu Pembaruan:** 2026-11-10 (Sesi Modul 0 Selesai)
 - **Modul Sedang Dipelajari:** Modul 0 - Fondasi
-- **Langkah Aktif:** [Modul 0 / Langkah 1] Verifikasi Lingkungan Kerja (Node.js, npm, Git)
+- **Langkah Aktif:** [Modul 0 / Langkah 8] Sinkronisasi Status dan Persiapan Remote GitHub
 - **Topik Pembahasan:**
-  - Verifikasi ketersediaan Node.js, npm, dan Git di OS Windows
-  - Penjelasan analogi runtime dan package manager (komparasi PHP & Composer di Laravel)
+  - Setup lingkungan kerja Node.js v24 dan Git
+  - Logika kalkulasi stok bahan segar (buncis, kentang, wortel, tomat, ayam)
+  - Validasi bisnis guard clause (pencegahan stok negatif)
+  - Refactoring array imperatif ke fungsional (`Array.reduce`)
 
 ---
 
 ## Ringkasan Status Modul
-- [ ] Modul 0: Fondasi (Sedang berjalan)
-- [ ] Modul 1: Node.js (Belum dimulai)
+- [x] Modul 0: Fondasi (Selesai - Siap Tag & Evaluasi)
+- [ ] Modul 1: Node.js (Berikutnya)
 - [ ] Modul 2: HTTP & REST (Belum dimulai)
 - [ ] Modul 3: Express (Belum dimulai)
 - [ ] Modul 4: Database PostgreSQL (Belum dimulai)
@@ -31,11 +33,13 @@ Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak statu
 ## Informasi Lingkungan & Tooling
 - **Sistem Operasi:** Windows
 - **Code Editor:** Visual Studio Code
-- **Versi Node.js:** (Menunggu verifikasi terminal)
-- **Versi npm:** (Menunggu verifikasi terminal)
-- **Versi Git:** (Menunggu verifikasi terminal)
+- **Versi Node.js:** v24.14.1
+- **Versi npm:** 11.11.0
+- **Versi Git:** 2.53.0.windows.1
 
 ---
 
 ## Keputusan Teknis & Fitur Berjalan
-- *Belum ada fitur kode yang diimplementasikan (tahap persiapan Modul 0).*
+1. **Penyimpanan Memori Sementara:** Menggunakan struktur data objek JavaScript murni di Modul 0 untuk mematangkan logika bisnis sebelum beralih ke database.
+2. **Integritas Stok Fisik:** Menolak mutasi `terpakai`/`terbuang` jika kuantitas melebihi sisa stok yang ada (*non-negative stock constraint*).
+3. **Konvensi Riwayat Git:** Menerapkan *conventional commits* (`chore:`, `feat:`, `docs:`) untuk mempermudah pelacakan changelog.
