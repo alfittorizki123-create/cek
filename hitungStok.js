@@ -1,4 +1,4 @@
-// Data contoh mutasi bahan segar Lapak Steak
+// Data transaksi mutasi bahan segar (ditambah kasus uji stok minus)
 const mutasiStok = [
   { bahan: 'ayam', jenis: 'masuk', jumlah: 10 },
   { bahan: 'kentang', jenis: 'masuk', jumlah: 8 },
@@ -10,32 +10,38 @@ const mutasiStok = [
   { bahan: 'ayam', jenis: 'terbuang', jumlah: 1 },
   { bahan: 'wortel', jenis: 'terpakai', jumlah: 2 },
   { bahan: 'tomat', jenis: 'terbuang', jumlah: 0.5 },
+  // Kasus uji: coba pakai ayam 10 kg saat sisa cuma 5 kg
+  { bahan: 'ayam', jenis: 'terpakai', jumlah: 10 },
 ];
 
-// Fungsi kalkulasi sisa stok
+// Pendekatan Modern Fungsional dengan Array.reduce & Validasi
 function hitungSisaStok(daftarMutasi) {
-  const stokAkhir = {};
-
-  daftarMutasi.forEach((transaksi) => {
+  return daftarMutasi.reduce((akumulator, transaksi) => {
     const { bahan, jenis, jumlah } = transaksi;
 
-    // Inisialisasi bahan jika belum tercatat di objek
-    if (!stokAkhir[bahan]) {
-      stokAkhir[bahan] = 0;
+    // Inisialisasi awal bahan jika belum ada di akumulator
+    if (akumulator[bahan] === undefined) {
+      akumulator[bahan] = 0;
     }
 
-    // Kalkulasi mutasi
     if (jenis === 'masuk') {
-      stokAkhir[bahan] += jumlah;
+      akumulator[bahan] += jumlah;
     } else if (jenis === 'terpakai' || jenis === 'terbuang') {
-      stokAkhir[bahan] -= jumlah;
+      // Guard clause: tolak pengurangan jika stok tidak mencukupi
+      if (akumulator[bahan] < jumlah) {
+        console.warn(`[PERINGATAN] Mutasi ${jenis} ${bahan} sebesar ${jumlah} ditolak! Sisa stok hanya ${akumulator[bahan]}`);
+      } else {
+        akumulator[bahan] -= jumlah;
+      }
     }
-  });
 
-  return stokAkhir;
+    return akumulator;
+  }, {});
 }
 
-// Eksekusi dan cetak hasil
-const hasil = hitungSisaStok(mutasiStok);
-console.log('=== LAPORAN SISA STOK BAHAN SEGAR LAPAK STEAK ===');
-console.table(hasil);
+// Eksekusi
+console.log('=== MEMPROSES MUTASI STOK ===');
+const laporan = hitungSisaStok(mutasiStok);
+
+console.log('\n=== LAPORAN SISA STOK AKHIR ===');
+console.table(laporan);
