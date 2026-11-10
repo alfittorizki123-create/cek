@@ -1,0 +1,14 @@
+# Dependency
+node_modules/
+npm-debug.log*
+
+# Environment & Rahasia
+.env
+.env.*
+!.env.example
+
+# Sistem Operasi & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
