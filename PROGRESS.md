@@ -5,21 +5,22 @@ Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak statu
 ---
 
 ## Log Aktivitas Terakhir
-- **Waktu Pembaruan:** 2026-11-12 08:36:31
-- **Modul Sedang Dipelajari:** Modul 0 - Fondasi
-- **Langkah Aktif:** [Modul 0 / Langkah 16] Finalisasi Modul 0 via Pull Request
+- **Waktu Pembaruan:** 2026-11-12 09:26:05
+- **Modul Sedang Dipelajari:** Modul 0 - Fondasi (Lulus) -> Lanjut Modul 1 - Node.js
+- **Langkah Aktif:** [Modul 0 / Langkah 19] Finalisasi Tag `v0-modul0` & Push ke GitHub
 - **Topik Pembahasan:**
   - Setup lingkungan kerja Node.js v24 dan Git
   - Logika kalkulasi stok bahan segar (buncis, kentang, wortel, tomat, ayam) + validasi non-negatif (`Array.reduce`)
-  - Git branch, merge, remote GitHub (`cek`), dan Pull Request
+  - Git branch, merge, remote GitHub (`cek`), Pull Request (#1), `git pull` & `git push`
   - Modularisasi CommonJS (`kalkulatorStok.js`), `Promise`, `async/await`, `try/catch`
   - Fondasi jaringan (client-server, IP, port, DNS, HTTP/HTTPS), DSA `O(1)` Hash Map, intro TypeScript
+  - Evaluasi pemahaman 5 pertanyaan Modul 0 selesai
 
 ---
 
 ## Ringkasan Status Modul
-- [x] Modul 0: Fondasi (Menunggu merge PR, geser tag `v0-modul0`, & kuis kelulusan)
-- [ ] Modul 1: Node.js (Berikutnya)
+- [x] Modul 0: Fondasi (Lulus - Tag `v0-modul0` dipindah ke commit final & push GitHub)
+- [ ] Modul 1: Node.js (Siap dimulai)
 - [ ] Modul 2: HTTP & REST (Belum dimulai)
 - [ ] Modul 3: Express (Belum dimulai)
 - [ ] Modul 4: Database PostgreSQL (Belum dimulai)

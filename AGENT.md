@@ -50,9 +50,9 @@ Backend manajemen stok bahan segar (buncis, kentang, wortel, tomat, ayam).
 
 ## Roadmap & Status Modul
 
-- [ ] **Modul 0 - Fondasi**
+- [x] **Modul 0 - Fondasi**
   - *Materi:* Terminal/CLI, Git & GitHub, Modern JS (ES6+, Promise, async/await), Dasar Jaringan (Client-server, IP, Port, DNS, HTTP/HTTPS), DSA dasar, intro TypeScript.
-  - *Proyek:* Repo `stoksegar-api`, `README.md`, `PROGRESS.md`, kalkulator sisa stok via array contoh.
+  - *Proyek:* Repo `cek` (rename dari `stoksegar-api`), `README.md`, `PROGRESS.md`, kalkulator sisa stok via array contoh.
   - *DoD:* Repo GitHub 5+ commit, skrip berjalan dengan `node`, README informatif, tag `v0-modul0`.
 
 - [ ] **Modul 1 - Node.js**
