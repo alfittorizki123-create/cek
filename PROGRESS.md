@@ -5,21 +5,21 @@ Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak statu
 ---
 
 ## Log Aktivitas Terakhir
-- **Waktu Pembaruan:** 2026-11-12 22:38:35
-- **Modul Sedang Dipelajari:** Modul 2 - HTTP dan REST
-- **Langkah Aktif:** [Modul 2 / Langkah 4] Katalog Error Seragam & Pengenalan GraphQL / gRPC
+- **Waktu Pembaruan:** 2026-11-12 22:53:07
+- **Modul Sedang Dipelajari:** Modul 2 - HTTP dan REST (Lulus) -> Siap Masuk Modul 3 - Express
+- **Langkah Aktif:** [Modul 2 / Langkah 6] Kunci Tag `v2-modul2`, Push GitHub, & Cek Prasyarat Modul 3
 - **Topik Pembahasan:**
-  - Terverifikasi 9 endpoint lengkap di `docs/api-contract.md` (`/bahan`, `/mutasi`, `/stok/ringkasan`) dengan pagination, filtering, dan sorting
-  - Katalog kode error seragam (`400`, `404`, `409`, `422`, `500`) di `docs/api-contract.md`
-  - Pengenalan konsep **GraphQL** & **gRPC** dibanding REST API
+  - Kontrak API RESTful `/api/v1` selesai di `docs/api-contract.md` (9 endpoint, pagination/filter/sort, katalog error seragam)
+  - Idempotency, `PUT` vs `PATCH`, status code (`200`, `201`, `400`, `404`, `409`, `422`, `500`), serta pengenalan GraphQL & gRPC
+  - 5 pertanyaan evaluasi pemahaman Modul 2 terjawab lengkap dan lulus
 
 ---
 
 ## Ringkasan Status Modul
 - [x] Modul 0: Fondasi (Lulus - Tag `v0-modul0` di commit `05c2081`)
 - [x] Modul 1: Node.js (Lulus - Tag `v1-modul1` di commit `f6255e2`)
-- [ ] Modul 2: HTTP & REST (Sedang berjalan — Langkah 1)
-- [ ] Modul 3: Express (Belum dimulai)
+- [x] Modul 2: HTTP & REST (Lulus - Siap tag `v2-modul2` & push GitHub)
+- [ ] Modul 3: Express (Siap dimulai)
 - [ ] Modul 4: Database PostgreSQL (Belum dimulai)
 - [ ] Modul 5: Validasi, Auth & Keamanan (Belum dimulai)
 - [ ] Modul 6: Kualitas & Dokumentasi (Belum dimulai)
@@ -47,3 +47,4 @@ Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak statu
 5. **Repo GitHub Aktif:** Repo direname dari `stoksegar-api` ke `cek`.
 6. **Pengelolaan Dokumen Progres:** File `PROGRESS.md` selalu diperbarui langsung oleh Navigator/AI.
 7. **CLI Persistensi JSON (Modul 1):** CLI pencatat stok di `cli/` (`index.js` + `storage.js`) memakai `node:fs/promises`, `node:path`, `EventEmitter`, dan `dotenv` dengan penyimpanan lokal diabaikan `.gitignore` (`cli/data/`).
+8. **Kontrak API REST v1 (Modul 2):** Kontrak di `docs/api-contract.md` menetapkan prefix `/api/v1`, 9 endpoint (`/bahan`, `/mutasi`, `/stok/ringkasan`), query params pagination/filter/sort, serta amplop JSON seragam `{ success, message, data, meta }` / `{ success: false, error: { code, message, details } }`.

@@ -60,7 +60,7 @@ Backend manajemen stok bahan segar (buncis, kentang, wortel, tomat, ayam).
   - *Proyek:* CLI pencatat stok di `cli/` berbasis file JSON + konfigurasi `.env`.
   - *DoD:* Data bertahan pasca-shutdown, error file corrupt tertangani, `.env` diabaikan Git, tag `v1-modul1`.
 
-- [ ] **Modul 2 - HTTP dan REST**
+- [x] **Modul 2 - HTTP dan REST**
   - *Materi:* Request/Response, method, header, status code, body, JSON, REST design, versioning, pagination, filtering, sorting, idempotency, GraphQL & gRPC intro.
   - *Proyek:* Dokumen kontrak API di `docs/api-contract.md` (bahan & mutasi stok).
   - *DoD:* Minimal 8 endpoint terdokumentasi, format error seragam, argumentasi status code jelas, tag `v2-modul2`.
