@@ -5,19 +5,20 @@ Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak statu
 ---
 
 ## Log Aktivitas Terakhir
-- **Waktu Pembaruan:** 2026-11-12 22:18:18
-- **Modul Sedang Dipelajari:** Modul 1 - Node.js (Lulus) -> Siap Masuk Modul 2 - HTTP dan REST
-- **Langkah Aktif:** [Modul 1 / Langkah 10] Kunci Tag `v1-modul1`, Push GitHub, & Cek Prasyarat Modul 2
+- **Waktu Pembaruan:** 2026-11-12 22:38:35
+- **Modul Sedang Dipelajari:** Modul 2 - HTTP dan REST
+- **Langkah Aktif:** [Modul 2 / Langkah 4] Katalog Error Seragam & Pengenalan GraphQL / gRPC
 - **Topik Pembahasan:**
-  - Seluruh materi Modul 1 tuntas: V8/Event Loop/Non-blocking I/O, npm/SemVer/`package.json`, CommonJS vs ESM, `node:fs/promises`, `node:path`, `EventEmitter`, `.env` (`dotenv` v18.0.10), Streams & Buffer, Worker Threads
-  - 5 pertanyaan evaluasi pemahaman Modul 1 terjawab tepat dan lulus
+  - Terverifikasi 9 endpoint lengkap di `docs/api-contract.md` (`/bahan`, `/mutasi`, `/stok/ringkasan`) dengan pagination, filtering, dan sorting
+  - Katalog kode error seragam (`400`, `404`, `409`, `422`, `500`) di `docs/api-contract.md`
+  - Pengenalan konsep **GraphQL** & **gRPC** dibanding REST API
 
 ---
 
 ## Ringkasan Status Modul
 - [x] Modul 0: Fondasi (Lulus - Tag `v0-modul0` di commit `05c2081`)
-- [x] Modul 1: Node.js (Lulus - Siap tag `v1-modul1` & push GitHub)
-- [ ] Modul 2: HTTP & REST (Siap dimulai)
+- [x] Modul 1: Node.js (Lulus - Tag `v1-modul1` di commit `f6255e2`)
+- [ ] Modul 2: HTTP & REST (Sedang berjalan — Langkah 1)
 - [ ] Modul 3: Express (Belum dimulai)
 - [ ] Modul 4: Database PostgreSQL (Belum dimulai)
 - [ ] Modul 5: Validasi, Auth & Keamanan (Belum dimulai)
