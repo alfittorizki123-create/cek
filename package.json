@@ -4,6 +4,7 @@
   "description": "Backend RESTful API untuk manajemen inventaris bahan segar UMKM Lapak Steak.",
   "main": "hitungStok.js",
   "scripts": {
+    "cli": "node cli/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

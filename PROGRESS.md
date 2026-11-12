@@ -5,19 +5,18 @@ Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak statu
 ---
 
 ## Log Aktivitas Terakhir
-- **Waktu Pembaruan:** 2026-11-12 09:48:32
+- **Waktu Pembaruan:** 2026-11-12 22:11:21
 - **Modul Sedang Dipelajari:** Modul 1 - Node.js
-- **Langkah Aktif:** [Modul 1 / Langkah 4] Modul `fs/promises`, `path`, & Penyimpanan JSON (`cli/storage.js` sudah dibuat, menunggu uji jalan + commit checkpoint)
+- **Langkah Aktif:** [Modul 1 / Langkah 8] Rapikan `.gitignore`, `npm scripts`, `README.md`, & Commit CLI
 - **Topik Pembahasan:**
-  - `.env` & `.env.example` dibuat, `dotenv` v18.0.10 teruji, `.gitignore` terkonfirmasi abaikan `.env` & `node_modules/`
-  - Klarifikasi peran folder `cli/` (setara command artisan Laravel) vs HTTP API yang dites lewat Postman di Modul 3
-  - `cli/storage.js` ditulis memakai `node:fs/promises`, `node:path`, penanganan `ENOENT` & `SyntaxError` JSON corrupt
+  - Demo Streams & Buffer (`fs.createReadStream` 64 byte/chunk) dan `node:worker_threads` terverifikasi berjalan
+  - Penambahan `cli/data/` ke `.gitignore`, script `"cli"` di `package.json`, dan pembaruan `README.md`
 
 ---
 
 ## Ringkasan Status Modul
 - [x] Modul 0: Fondasi (Lulus - Tag `v0-modul0` di commit `05c2081`)
-- [ ] Modul 1: Node.js (Sedang berjalan — Langkah 4 dari ~7)
+- [ ] Modul 1: Node.js (Menunggu commit akhir & evaluasi kelulusan)
 - [ ] Modul 2: HTTP & REST (Belum dimulai)
 - [ ] Modul 3: Express (Belum dimulai)
 - [ ] Modul 4: Database PostgreSQL (Belum dimulai)
@@ -46,3 +45,4 @@ Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak statu
 4. **Modularisasi & Asinkron:** Memisahkan logika ke `kalkulatorStok.js` (CommonJS) serta membungkus alur eksekusi di `hitungStok.js` dengan `async/await` + `try/catch`.
 5. **Repo GitHub Aktif:** Repo direname dari `stoksegar-api` ke `cek`.
 6. **Pengelolaan Dokumen Progres:** File `PROGRESS.md` selalu diperbarui langsung oleh Navigator/AI.
+7. **CLI Persistensi JSON (Modul 1):** CLI pencatat stok di `cli/` (`index.js` + `storage.js`) memakai `node:fs/promises`, `node:path`, `EventEmitter`, dan `dotenv` dengan penyimpanan lokal diabaikan `.gitignore` (`cli/data/`).

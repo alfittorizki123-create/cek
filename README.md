@@ -4,26 +4,34 @@ Backend RESTful API untuk manajemen inventaris bahan segar UMKM Lapak Steak.
 
 ## Prasyarat Sistem
 - Node.js (v24.x atau LTS terbaru)
+- npm
 - Git
 
-## Panduan Menjalankan Skrip
-Jalankan skrip kalkulasi sisa stok dari root folder:
-
+## Instalasi & Konfigurasi Awal
+1. Pasang dependensi:
 ```powershell
-node hitungStok.js
+npm install
+```
+2. Salin template environment menjadi `.env` (jangan pernah commit `.env`):
+```powershell
+Copy-Item .env.example .env
 ```
 
-## Contoh Output Terminal
+## Panduan Menjalankan
 
-```text
-=== LAPORAN SISA STOK BAHAN SEGAR LAPAK STEAK ===
-┌─────────┬────────┐
-│ (index) │ Values │
-├─────────┼────────┤
-│ ayam    │ 5      │
-│ kentang │ 5      │
-│ wortel  │ 3      │
-│ buncis  │ 4      │
-│ tomat   │ 2.5    │
-└─────────┴────────┘
+### 1. CLI Pencatat Stok (Modul 1)
+Menambah mutasi stok (`masuk`, `terpakai`, `terbuang`) yang tersimpan ke file JSON:
+```powershell
+npm run cli -- tambah ayam masuk 10
+npm run cli -- tambah ayam terpakai 8.5
+```
+
+Melihat ringkasan sisa stok:
+```powershell
+npm run cli -- lihat
+```
+
+### 2. Skrip Contoh Memori (Modul 0)
+```powershell
+node hitungStok.js
 ```
