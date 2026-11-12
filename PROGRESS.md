@@ -5,22 +5,19 @@ Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak statu
 ---
 
 ## Log Aktivitas Terakhir
-- **Waktu Pembaruan:** 2026-11-12 09:26:05
-- **Modul Sedang Dipelajari:** Modul 0 - Fondasi (Lulus) -> Lanjut Modul 1 - Node.js
-- **Langkah Aktif:** [Modul 0 / Langkah 19] Finalisasi Tag `v0-modul0` & Push ke GitHub
+- **Waktu Pembaruan:** 2026-11-12 09:48:32
+- **Modul Sedang Dipelajari:** Modul 1 - Node.js
+- **Langkah Aktif:** [Modul 1 / Langkah 4] Modul `fs/promises`, `path`, & Penyimpanan JSON (`cli/storage.js` sudah dibuat, menunggu uji jalan + commit checkpoint)
 - **Topik Pembahasan:**
-  - Setup lingkungan kerja Node.js v24 dan Git
-  - Logika kalkulasi stok bahan segar (buncis, kentang, wortel, tomat, ayam) + validasi non-negatif (`Array.reduce`)
-  - Git branch, merge, remote GitHub (`cek`), Pull Request (#1), `git pull` & `git push`
-  - Modularisasi CommonJS (`kalkulatorStok.js`), `Promise`, `async/await`, `try/catch`
-  - Fondasi jaringan (client-server, IP, port, DNS, HTTP/HTTPS), DSA `O(1)` Hash Map, intro TypeScript
-  - Evaluasi pemahaman 5 pertanyaan Modul 0 selesai
+  - `.env` & `.env.example` dibuat, `dotenv` v18.0.10 teruji, `.gitignore` terkonfirmasi abaikan `.env` & `node_modules/`
+  - Klarifikasi peran folder `cli/` (setara command artisan Laravel) vs HTTP API yang dites lewat Postman di Modul 3
+  - `cli/storage.js` ditulis memakai `node:fs/promises`, `node:path`, penanganan `ENOENT` & `SyntaxError` JSON corrupt
 
 ---
 
 ## Ringkasan Status Modul
-- [x] Modul 0: Fondasi (Lulus - Tag `v0-modul0` dipindah ke commit final & push GitHub)
-- [ ] Modul 1: Node.js (Siap dimulai)
+- [x] Modul 0: Fondasi (Lulus - Tag `v0-modul0` di commit `05c2081`)
+- [ ] Modul 1: Node.js (Sedang berjalan — Langkah 4 dari ~7)
 - [ ] Modul 2: HTTP & REST (Belum dimulai)
 - [ ] Modul 3: Express (Belum dimulai)
 - [ ] Modul 4: Database PostgreSQL (Belum dimulai)
