@@ -1,23 +1,24 @@
 # Catatan Progres Belajar: StokSegar API
 
-Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak status modul, fitur yang berjalan, riwayat sesi, dan keputusan teknis.
+Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak status modul, fitur yang berjalan, riwayat sesi, dan keputusan teknis. **Diperbarui langsung oleh Navigator/AI.**
 
 ---
 
 ## Log Aktivitas Terakhir
-- **Waktu Pembaruan:** 2026-11-10 (Sesi Modul 0 Selesai)
+- **Waktu Pembaruan:** 2026-11-12 08:36:31
 - **Modul Sedang Dipelajari:** Modul 0 - Fondasi
-- **Langkah Aktif:** [Modul 0 / Langkah 8] Sinkronisasi Status dan Persiapan Remote GitHub
+- **Langkah Aktif:** [Modul 0 / Langkah 16] Finalisasi Modul 0 via Pull Request
 - **Topik Pembahasan:**
   - Setup lingkungan kerja Node.js v24 dan Git
-  - Logika kalkulasi stok bahan segar (buncis, kentang, wortel, tomat, ayam)
-  - Validasi bisnis guard clause (pencegahan stok negatif)
-  - Refactoring array imperatif ke fungsional (`Array.reduce`)
+  - Logika kalkulasi stok bahan segar (buncis, kentang, wortel, tomat, ayam) + validasi non-negatif (`Array.reduce`)
+  - Git branch, merge, remote GitHub (`cek`), dan Pull Request
+  - Modularisasi CommonJS (`kalkulatorStok.js`), `Promise`, `async/await`, `try/catch`
+  - Fondasi jaringan (client-server, IP, port, DNS, HTTP/HTTPS), DSA `O(1)` Hash Map, intro TypeScript
 
 ---
 
 ## Ringkasan Status Modul
-- [x] Modul 0: Fondasi (Selesai - Siap Tag & Evaluasi)
+- [x] Modul 0: Fondasi (Menunggu merge PR, geser tag `v0-modul0`, & kuis kelulusan)
 - [ ] Modul 1: Node.js (Berikutnya)
 - [ ] Modul 2: HTTP & REST (Belum dimulai)
 - [ ] Modul 3: Express (Belum dimulai)
@@ -36,10 +37,14 @@ Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak statu
 - **Versi Node.js:** v24.14.1
 - **Versi npm:** 11.11.0
 - **Versi Git:** 2.53.0.windows.1
+- **Repo GitHub:** `alfittorizki123-create/cek`
 
 ---
 
 ## Keputusan Teknis & Fitur Berjalan
 1. **Penyimpanan Memori Sementara:** Menggunakan struktur data objek JavaScript murni di Modul 0 untuk mematangkan logika bisnis sebelum beralih ke database.
 2. **Integritas Stok Fisik:** Menolak mutasi `terpakai`/`terbuang` jika kuantitas melebihi sisa stok yang ada (*non-negative stock constraint*).
-3. **Konvensi Riwayat Git:** Menerapkan *conventional commits* (`chore:`, `feat:`, `docs:`) untuk mempermudah pelacakan changelog.
+3. **Konvensi Riwayat Git:** Menerapkan *conventional commits* (`chore:`, `feat:`, `docs:`, `refactor:`) dan alur branch + PR.
+4. **Modularisasi & Asinkron:** Memisahkan logika ke `kalkulatorStok.js` (CommonJS) serta membungkus alur eksekusi di `hitungStok.js` dengan `async/await` + `try/catch`.
+5. **Repo GitHub Aktif:** Repo direname dari `stoksegar-api` ke `cek`.
+6. **Pengelolaan Dokumen Progres:** File `PROGRESS.md` selalu diperbarui langsung oleh Navigator/AI.

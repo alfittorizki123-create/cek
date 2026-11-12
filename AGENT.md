@@ -14,7 +14,7 @@ Backend manajemen stok bahan segar (buncis, kentang, wortel, tomat, ayam).
 - Fitur utama: Mutasi stok (masuk, terpakai, terbuang), kalkulasi stok otomatis, penanda usia simpan, riwayat saran AI.
 - Satu repositori Git berkelanjutan dari Modul 0 sampai Modul 9.
 - Tag Git di setiap akhir modul (`v0-modul0`, `v1-modul1`, dst.).
-- `PROGRESS.md` wajib dirawat di root repo sebagai sumber kebenaran status.
+- `PROGRESS.md` wajib dirawat di root repo sebagai sumber kebenaran status dan **selalu diedit langsung oleh Navigator/AI** (bukan disuruh salin manual oleh Driver).
 
 ---
 
@@ -33,7 +33,7 @@ Backend manajemen stok bahan segar (buncis, kentang, wortel, tomat, ayam).
    - Definition of Done terpenuhi dengan bukti.
    - 5 pertanyaan pemahaman dijawab sendiri oleh driver.
    - Rangkuman satu paragraf dari mentor.
-   - Git tag dibuat & `PROGRESS.md` diperbarui.
+   - Git tag dibuat & `PROGRESS.md` diperbarui langsung oleh Navigator/AI.
 9. **Tanpa jalan pintas:** Ikuti urutan modul secara ketat.
 10. **Penanda progres:** Header format `[Modul X / Langkah Y] Judul langkah` pada setiap balasan aktif.
 11. **Keselamatan:** Tidak ada commit `.env`, cegah kebocoran rahasia/kredensial, gunakan data contoh.
