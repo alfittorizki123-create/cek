@@ -55,7 +55,7 @@ Backend manajemen stok bahan segar (buncis, kentang, wortel, tomat, ayam).
   - *Proyek:* Repo `cek` (rename dari `stoksegar-api`), `README.md`, `PROGRESS.md`, kalkulator sisa stok via array contoh.
   - *DoD:* Repo GitHub 5+ commit, skrip berjalan dengan `node`, README informatif, tag `v0-modul0`.
 
-- [ ] **Modul 1 - Node.js**
+- [x] **Modul 1 - Node.js**
   - *Materi:* V8 engine, Event Loop, Non-blocking I/O, npm, package.json, CommonJS vs ESM, fs, path, EventEmitter, .env, streams & buffer, worker threads.
   - *Proyek:* CLI pencatat stok di `cli/` berbasis file JSON + konfigurasi `.env`.
   - *DoD:* Data bertahan pasca-shutdown, error file corrupt tertangani, `.env` diabaikan Git, tag `v1-modul1`.

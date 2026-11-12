@@ -5,19 +5,19 @@ Dokumen ini adalah sumber kebenaran (single source of truth) untuk melacak statu
 ---
 
 ## Log Aktivitas Terakhir
-- **Waktu Pembaruan:** 2026-11-12 22:11:21
-- **Modul Sedang Dipelajari:** Modul 1 - Node.js
-- **Langkah Aktif:** [Modul 1 / Langkah 8] Rapikan `.gitignore`, `npm scripts`, `README.md`, & Commit CLI
+- **Waktu Pembaruan:** 2026-11-12 22:18:18
+- **Modul Sedang Dipelajari:** Modul 1 - Node.js (Lulus) -> Siap Masuk Modul 2 - HTTP dan REST
+- **Langkah Aktif:** [Modul 1 / Langkah 10] Kunci Tag `v1-modul1`, Push GitHub, & Cek Prasyarat Modul 2
 - **Topik Pembahasan:**
-  - Demo Streams & Buffer (`fs.createReadStream` 64 byte/chunk) dan `node:worker_threads` terverifikasi berjalan
-  - Penambahan `cli/data/` ke `.gitignore`, script `"cli"` di `package.json`, dan pembaruan `README.md`
+  - Seluruh materi Modul 1 tuntas: V8/Event Loop/Non-blocking I/O, npm/SemVer/`package.json`, CommonJS vs ESM, `node:fs/promises`, `node:path`, `EventEmitter`, `.env` (`dotenv` v18.0.10), Streams & Buffer, Worker Threads
+  - 5 pertanyaan evaluasi pemahaman Modul 1 terjawab tepat dan lulus
 
 ---
 
 ## Ringkasan Status Modul
 - [x] Modul 0: Fondasi (Lulus - Tag `v0-modul0` di commit `05c2081`)
-- [ ] Modul 1: Node.js (Menunggu commit akhir & evaluasi kelulusan)
-- [ ] Modul 2: HTTP & REST (Belum dimulai)
+- [x] Modul 1: Node.js (Lulus - Siap tag `v1-modul1` & push GitHub)
+- [ ] Modul 2: HTTP & REST (Siap dimulai)
 - [ ] Modul 3: Express (Belum dimulai)
 - [ ] Modul 4: Database PostgreSQL (Belum dimulai)
 - [ ] Modul 5: Validasi, Auth & Keamanan (Belum dimulai)
